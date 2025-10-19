@@ -1,0 +1,126 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== CV Container ===== */
+.cv-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+    width: 30%;
+    background-color: #0a3d62;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.sidebar .profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.sidebar .profile h1 {
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.sidebar .profile .title {
+    font-size: 0.9em;
+    color: #c7ecee;
+}
+
+.sidebar h2 {
+    font-size: 1.1em;
+    border-bottom: 2px solid #60a3bc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+.sidebar ul li {
+    margin: 8px 0;
+}
+
+/* ===== Main Content ===== */
+.main-content {
+    width: 70%;
+    padding: 30px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    color: #0a3d62;
+    border-bottom: 2px solid #0a3d62;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.section .item {
+    margin-bottom: 15px;
+}
+
+.section h3 {
+    font-size: 1em;
+    color: #2c3e50;
+}
+
+.section p,
+.section ul {
+    font-size: 0.95em;
+    margin-top: 5px;
+}
+
+.section ul {
+    list-style: disc inside;
+}
+
+.date {
+    font-size: 0.85em;
+    color: #777;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+    .sidebar {
+        text-align: center;
+    }
+}

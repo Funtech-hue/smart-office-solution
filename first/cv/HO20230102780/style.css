@@ -1,0 +1,130 @@
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #222;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.cv-wrapper {
+  display: flex;
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar {
+  width: 30%;
+  background: #6a1b9a;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar-content h1 {
+  font-size: 1.8em;
+  margin: 0 0 10px;
+}
+
+.sidebar-content .role {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.languages, .hobbies {
+  margin-top: 20px;
+}
+
+.languages h3, .hobbies h3 {
+  font-size: 1.2em;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.languages ul, .hobbies ul {
+  list-style: none;
+  padding: 0;
+}
+
+.languages li, .hobbies li {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.main-content {
+  width: 70%;
+  padding: 20px 30px;
+}
+
+h2 {
+  color: #6a1b9a;
+  font-size: 1.4em;
+  border-bottom: 2px solid #6a1b9a;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.edu-item, .exp-item {
+  margin-bottom: 20px;
+}
+
+.edu-item h3, .exp-item h3 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.edu-item p, .exp-item p {
+  font-style: italic;
+  margin: 5px 0;
+  color: #555;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+.skills ul, .certifications ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li, .certifications li {
+  background: #f3e5f5;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 700px) {
+  .cv-wrapper {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .sidebar, .main-content {
+    width: 100%;
+  }
+
+  .sidebar {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .sidebar-content h1 {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,98 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.top-header {
+  text-align: center;
+  background: #2e7d32;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-info h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.header-info .role {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.header-info .contact,
+.header-info .address {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+.content {
+  padding: 20px;
+}
+
+h2 {
+  color: #2e7d32;
+  border-bottom: 2px solid #2e7d32;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.edu-item, .exp-item {
+  margin-bottom: 20px;
+}
+
+.edu-item h3, .exp-item h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.edu-item p, .exp-item p {
+  margin: 5px 0;
+  font-style: italic;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills ul, .certifications ul, .languages ul, .hobbies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li, .certifications li, .languages li, .hobbies li {
+  background: #e8f5e9;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .top-header {
+    padding: 15px;
+  }
+
+  .header-info h1 {
+    font-size: 1.5em;
+  }
+}
